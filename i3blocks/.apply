@@ -1,0 +1,2 @@
+#!/bin/sh
+cp ~/Dotfiles/i3blocks/i3blocks.conf ~/.config/i3blocks/i3blocks.conf

@@ -193,7 +193,6 @@ bindsym $mod+x exec /home/$USER/.config/scripts/lock
 bar {
         status_command i3status
 	i3bar_command i3bar --transparency
-	tray_output none
 }
 
 # Display Wallpaper
@@ -202,8 +201,26 @@ exec_always feh --bg-fill ~/Dotfiles/i3/wallpaper/wallpaper.png
 # start picom 
 exec --no-startup-id picom --config /home/fizzy/.config/picom/picom.conf
 
+# Color shemes for windows 
+set $bgcolor    #523d64
+set $in-bgcolor #363636
+set $text       #ffffff
+set $u-bgcolor  #ff0000
+set $indicator  #a8a3c1
+set $in-text    #969696
+#                       border          background      text            indicator (a line which shows where the next window will be placed)     
+client.focused          $bgcolor        $bgcolor        $text           $indicator
+client.unfocused        $in-bgcolor     $in-bgcolor     $in-text        $in-bgcolor
+client.focused_inactive $in-bgcolor     $in-bgcolor     $in-text        $in-bgcolor
+client.urgent           $u-bgcolor      $u-bgcolor      $text           $u-bgcolor 
+
 set $bgcolor    #523d6499
 set $in-bgcolor #3636364D
 set $focused-ws #523d6480
 set $bar-color  #523d640D
 
+# Key bindings for Media control keys
+bindsym XF86AudioPlay exec playerctl play
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
