@@ -199,8 +199,8 @@ bar {
 # Display Wallpaper
 exec_always feh --bg-fill ~/Dotfiles/i3/wallpaper/wallpaper.png
 
-# Transparency with picom compositor
-exec_always picom -f
+# start picom 
+exec --no-startup-id picom --config ~/.config/picom/picom.conf
 
 set $bgcolor    #523d6499
 set $in-bgcolor #3636364D
