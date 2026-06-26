@@ -192,9 +192,18 @@ bindsym $mod+x exec /home/$USER/.config/scripts/lock
 # finds out, if available)
 bar {
         status_command i3status
+	i3bar_command i3bar --transparency
+	tray_output none
 }
 
 # Display Wallpaper
 exec_always feh --bg-fill ~/Dotfiles/i3/wallpaper/wallpaper.jpeg
 
+# Transparency with picom compositor
+exec_always picom -f
+
+set $bgcolor    #523d6499
+set $in-bgcolor #3636364D
+set $focused-ws #523d6480
+set $bar-color  #523d640D
 
