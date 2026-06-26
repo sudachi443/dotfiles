@@ -197,7 +197,7 @@ bar {
 }
 
 # Display Wallpaper
-exec_always feh --bg-fill ~/Dotfiles/i3/wallpaper/wallpaper.jpeg
+exec_always feh --bg-fill ~/Dotfiles/i3/wallpaper/wallpaper.png
 
 # Transparency with picom compositor
 exec_always picom -f
