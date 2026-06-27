@@ -1,0 +1,25 @@
+// ==UserScript==
+// @name        Twitter/X → Nitter（アカウント不要対応）
+// @match       *://twitter.com/*
+// @match       *://x.com/*
+// @run-at      document-start
+// ==/UserScript==
+
+(function() {
+  const instance = "https://nitter.net";
+
+  // 既にNitterなら無視
+  if (location.hostname.includes("nitter.net")) return;
+
+  let path = location.pathname;
+
+  // /@user → /user
+  if (path.startsWith("/@")) path = "/" + path.slice(2);
+
+  // /i/web/status/xxxx → /status/xxxx
+  path = path.replace(/^\/i\/web\/status\//, "/status/");
+
+  const url = instance + path + location.search + location.hash;
+
+  location.replace(url);
+})();
