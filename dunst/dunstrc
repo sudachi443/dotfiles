@@ -89,7 +89,7 @@
     # The transparency of the window.  Range: [0; 100].
     # This option will only work if a compositing window manager is
     # present (e.g. xcompmgr, compiz, etc.). (X11 only)
-    transparency = 10
+    transparency = 20
 
     # Draw a line of "separator_height" pixel height between two
     # notifications.
@@ -348,8 +348,8 @@
     default_icon = dialog-information
 
 [urgency_normal]
-    background = "#285577"
-    foreground = "#ffffff"
+    background = "#ffffff"
+    foreground = "#000000"
     timeout = 10
     override_pause_level = 30
     # Icon for notifications with normal urgency
