@@ -1,0 +1,50 @@
+1781839989520	Sync.LogManager	DEBUG	Flushing file log
+1781839989543	Sync.LogManager	DEBUG	Log cleanup threshold time: 1780975989543
+1781839989548	FirefoxAccounts	DEBUG	FxAccountsWebChannel registered: account_updates with origin https://accounts.firefox.com
+1781839989550	Sync.LogManager	DEBUG	Done deleting files.
+1781839991734	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1781839994173	Sync.Engine.Tabs	INFO	Can't do a quick-sync due to the service status: <Status: login: error.login.reason.no_username, service: service.client_not_configured, sync: success.sync>
+1781840008712	Sync.RemoteTabs	INFO	Generating tab list with filter
+1781840008732	Sync.Engine.Tabs	DEBUG	tabs storage db: opening database
+1781840008732	Sync.Engine.Tabs	INFO	tabs storage db: database doesn't exist, but we weren't requested to create it
+1781840008733	Sync.Engine.Tabs	INFO	tabs storage could not open an existing database and hasn't been asked to create one
+1781840008733	Sync.RemoteTabs	INFO	Final tab list has 0 clients with 0 tabs.
+1781840010893	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1781840014137	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1781840014565	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1781840014572	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1781840015239	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1781840015947	Sync.Engine.Tabs	INFO	Can't do a quick-sync due to the service status: <Status: login: error.login.reason.no_username, service: service.client_not_configured, sync: success.sync>
+1781840016423	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1781840017561	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1781840018387	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1781840021507	Sync.Engine.Tabs	INFO	Can't do a quick-sync due to the service status: <Status: login: error.login.reason.no_username, service: service.client_not_configured, sync: success.sync>
+1781840041153	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1781840046343	Sync.Engine.Tabs	INFO	Can't do a quick-sync due to the service status: <Status: login: error.login.reason.no_username, service: service.client_not_configured, sync: success.sync>
+1781840163852	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1781840168854	Sync.Engine.Tabs	INFO	Can't do a quick-sync due to the service status: <Status: login: error.login.reason.no_username, service: service.client_not_configured, sync: success.sync>
+1781840169948	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1781840175056	Sync.Engine.Tabs	INFO	Can't do a quick-sync due to the service status: <Status: login: error.login.reason.no_username, service: service.client_not_configured, sync: success.sync>
+1781840298196	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1781840303231	Sync.Engine.Tabs	INFO	Can't do a quick-sync due to the service status: <Status: login: error.login.reason.no_username, service: service.client_not_configured, sync: success.sync>
+1781840344986	Sync.SyncScheduler	DEBUG	Network link status changed to "down". Offline?: false
+1781840344986	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1781840344987	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1781840344991	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1781840347540	Sync.SyncScheduler	DEBUG	Network link status changed to "up". Offline?: false
+1781840347540	Sync.SyncScheduler	DEBUG	Network link looks up. Syncing.
+1781840347542	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1781840347544	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1781840347545	Sync.Service	DEBUG	User-Agent: Floorp/152.0 (Linux x86_64) FxSync/1.154.0.20260616134727.desktop
+1781840347545	Sync.Service	INFO	Starting sync at 2026-06-19 12:39:07 in browser session ydzZyWJITRwr
+1781840347545	Sync.Service	DEBUG	In sync: should login.
+1781840347545	Sync.Service	INFO	User logged in successfully - verifying login.
+1781840347545	Sync.SyncAuthManager	DEBUG	unlockAndVerifyAuthState has no FxA user
+1781840347545	Sync.Status	DEBUG	Status.login: error.login.reason.no_username => error.login.reason.no_username
+1781840347545	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1781840347545	Sync.Service	DEBUG	Fetching unlocked auth state returned error.login.reason.no_username
+1781840347545	Sync.ErrorHandler	ERROR	Sync encountered a login error
+1781840347545	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1781840347545	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1781840347546	Sync.Service	DEBUG	Exception calling WrappedLock: Error: Login failed: error.login.reason.no_username(resource://services-sync/service.sys.mjs:1061:15) JS Stack trace: onNotify@service.sys.mjs:1061:15
+1781840347546	Sync.Service	DEBUG	Not syncing: login returned false.
