@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cp ~/Dotfiles/polybar/config.ini ~/.config/polybar/config.ini
