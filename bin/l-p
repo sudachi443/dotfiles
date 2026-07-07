@@ -1,0 +1,6 @@
+#!/bin/sh
+[ $# -eq 1 ] || {
+	echo "usage:l-p path/to/file of .tex"
+	exit 1
+}
+echo 'compiling';lualatex $1&&echo 'show pdf'&&evince ${1%.tex}'.pdf' &~

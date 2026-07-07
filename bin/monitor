@@ -1,0 +1,9 @@
+#!/bin/sh
+[ $# -eq 3 ] || {
+	xrandr
+	echo "-----------------------------------"
+	echo "usage: monitor OUTPUT MODE POSITION"
+	echo "-----------------------------------"
+	exit 1
+}
+xrandr --output "$1" --mode "$2" --"$3" eDP-1
