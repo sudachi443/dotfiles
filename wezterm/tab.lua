@@ -24,9 +24,9 @@ local RIGHT_CIRCLE = wezterm.nerdfonts.ple_right_half_circle_thick
 function module.apply_to_config(config)
   -- タブバー自体の設定
   config.use_fancy_tab_bar = false -- レトロスタイル（フォント設定が効く）
-  config.tab_bar_at_bottom = true -- タブバーを下に表示
+  config.tab_bar_at_bottom = false  -- タブバーを下に表示
   config.hide_tab_bar_if_only_one_tab = false -- タブが1つでも表示する
-  config.show_new_tab_button_in_tab_bar = false -- 「+」ボタンを消す
+  config.show_new_tab_button_in_tab_bar = true -- 「+」ボタンを消す
   config.tab_max_width = 30 -- タブの最大幅
 
   -- タブのタイトルを描画する
