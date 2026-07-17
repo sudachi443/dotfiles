@@ -11,5 +11,7 @@ config.window_background_opacity = 0.8
 require("tab").apply_to_config(config)
 require("keybinds").apply_to_config(config) 
 
+
+
 -- 最後に、weztermに設定を戻す
 return config
